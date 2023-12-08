@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12 Laboratorinis</title>
+    <style>
+        .red {
+            color: red;
+        }
+
+        .orange {
+            color: orange;
+        }
+
+        .green {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Student Information Form</h2>
+
+    <form id="studentForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" required><br>
+
+        <label for="id">Student ID:</label>
+        <input type="text" id="id" name="id" required><br>
+
+        <div class="grades">
+            <label for="grades">Grades:</label>
+            <input type="number" id="grade1" name="grade1" min="0" max="100" required>
+            <input type="number" id="grade2" name="grade2" min="0" max="100" required>
+            <input type="number" id="grade3" name="grade3" min="0" max="100" required>
+            <input type="number" id="grade4" name="grade4" min="0" max="100" required>
+            <input type="number" id="grade5" name="grade5" min="0" max="100" required>
+        </div>
+
+        <button type="button" onclick="saveForm()">Save</button>
+
+        <div id="displayInfo"></div>
+
+        <script>
+            function saveForm() {
+                var name = document.getElementById("name").value;
+                var surname = document.getElementById("surname").value;
+                var id = document.getElementById("id").value;
+                var grade1 = parseFloat(document.getElementById("grade1").value);
+                var grade2 = parseFloat(document.getElementById("grade2").value);
+                var grade3 = parseFloat(document.getElementById("grade3").value);
+                var grade4 = parseFloat(document.getElementById("grade4").value);
+                var grade5 = parseFloat(document.getElementById("grade5").value);
+
+               
+                if (isNaN(grade1) || isNaN(grade2) || isNaN(grade3) || isNaN(grade4) || isNaN(grade5) ||
+                    grade1 < 0 || grade1 > 100 || grade2 < 0 || grade2 > 100 || grade3 < 0 || grade3 > 100 ||
+                    grade4 < 0 || grade4 > 100 || grade5 < 0 || grade5 > 100 || !/^[a-zA-Z0-9]+$/.test(id)) {
+                    alert("Invalid input! Please enter valid ID and grades.");
+                    return;
+                }
+                
+                if (/[a-zA-Z]/.test(id)) {
+                alert("Invalid ID! ID should not contain letters.");
+                return;
+                }
+
+                var gradesArray = [grade1, grade2, grade3, grade4, grade5];
+                var bestGrade = Math.max(...gradesArray);
+                var worstGrade = Math.min(...gradesArray);
+
+                console.log("Name:", name);
+                console.log("Surname:", surname);
+                console.log("ID:", id);
+                console.log("Grade 1:", grade1);
+                console.log("Grade 2:", grade2);
+                console.log("Grade 3:", grade3);
+                console.log("Grade 4:", grade4);
+                console.log("Grade 5:", grade5);
+
+                var infoString =
+                    "Name: " + name + "<br>" +
+                    "Surname: " + surname + "<br>" +
+                    "ID: " + id + "<br>" +
+                    "Grades: " + grade1 + " " + grade2 + " " + grade3 + " " + grade4 + " " + grade5 + "<br>" +
+                    "Best " + name + " " + surname + " (" + id + ") " + "mark " + bestGrade + "<br>" +
+                    "Worst " + worstGrade;
+
+                document.getElementById("displayInfo").innerHTML = infoString;
+
+                
+                changeGradeColor("grade1", grade1);
+                changeGradeColor("grade2", grade2);
+                changeGradeColor("grade3", grade3);
+                changeGradeColor("grade4", grade4);
+                changeGradeColor("grade5", grade5);
+            }
+
+            function changeGradeColor(elementId, grade) {
+            var outputElement = document.getElementById("displayInfo");
+
+            var colorClass = "";
+            if (grade <= 4) {
+                colorClass = "red";
+            } else if (grade > 4 && grade <= 8) {
+                colorClass = "orange";
+            } else {
+                colorClass = "green";
+            }
+
+            var coloredGrade = '<span class="' + colorClass + '">' + grade + '</span>';
+    
+            outputElement.innerHTML = outputElement.innerHTML.replace(new RegExp("\\b" + grade + "\\b", 'g'), coloredGrade);
+            }
+            
+        </script>
+    </form>
+</body>
+
+</html>

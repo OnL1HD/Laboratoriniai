@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>MathML and SVG</title>
+
+    <script type="text/javascript" async
+
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+
+        </script>
+
+</head>
+
+<body>
+
+    <!-- Use MathML to write the equation -->
+
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+
+        <msup>
+
+            <mi>a</mi>
+
+            <mn>2</mn>
+
+        </msup>
+
+        <mo>=</mo>
+
+        <msup>
+
+            <mi>b</mi>
+
+            <mn>2</mn>
+
+        </msup>
+
+        <mo>+</mo>
+
+        <msup>
+
+            <mi>c</mi>
+
+            <mn>2</mn>
+
+        </msup>
+
+    </math>
+
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+        <mi>Γ</mi>
+        <mfenced>
+            <mi>z</mi>
+        </mfenced>
+        <mo>=</mo>
+        <mrow>
+            <munderover>
+                <mo>&#x222B;</mo>           
+                <mn>0</mn>
+                <mn>&#x221E;</mn>           
+            </munderover>
+        </mrow>
+        
+        <mrow>
+            <msup>
+                <mi>t</mi>
+                <mrow>
+                    <mi>z</mi>
+                    <mo>-</mo>
+                    <mn>1</mn>
+                </mrow>
+            </msup>
+            <msup>
+                <mi>e</mi>
+                <mrow>
+                    <mo>-</mo>
+                    <mi>t</mi>
+                </mrow>
+            </msup>
+        </mrow>
+        <mi>d</mi> 
+        <mi>t</mi> 
+
+        <mo>=</mo>
+
+        <mrow>
+            <mfrac>
+                <mrow>
+                    <msup>
+                        <mi>e</mi>
+                        <mrow>
+                            <mo>-</mo>
+                            <mi>γ</mi> 
+                            <mi>z</mi>
+                        </mrow>
+                    </msup>
+                </mrow>
+                
+                <mrow>
+                    <mi>z</mi>
+                </mrow>
+            </mfrac>
+
+            <mrow>
+                <munderover>
+                    <mo>&#x220F;</mo> 
+                    <mrow>
+                        <mi>k</mi>
+                        <mo>=</mo>
+                        <mn>1</mn>
+                    </mrow>
+                    <mo>&#x221E;</mo> 
+                </munderover>
+                <mrow>
+                    <msup>
+                        <mfenced>
+                            
+                                <mrow>
+                                    <mn>1</mn>
+                                    <mo>+</mo>
+                                        <mfrac>
+                                                        
+                                            <mi>z</mi>
+                                                        
+                                            <mi>k</mi>
+                                        </mfrac>
+                                </mrow>
+                        </mfenced>
+                        <mrow>
+                            <mo>-</mo> 
+                            <mn>1</mn>
+                        </mrow>
+                        
+                    </msup>
+                    
+                    <msup>
+                        <mi>e</mi>
+                        <mrow>
+                        
+                            <mi>z</mi>
+                            <mo>/</mo>
+                            <mi>k</mi>
+                            
+                        </mrow>
+                    </msup>
+                </mrow>
+                
+            </mrow>
+        </mrow>
+
+
+    </math>
+
+    <svg width="300" height="300">
+        <ellipse cx="150" cy="75" rx="30" ry="45" stroke="black" stroke-width="6" fill="white" />
+        <line x1="106" y1="75" x2="194" y2="75" stroke="black" stroke-width="6"/>
+        <line x1="150" y1="120" x2="150" y2="140" stroke="black" stroke-width="6"/>
+        <line x1="130" y1="140" x2="170" y2="140" stroke="black" stroke-width="6" />
+    </svg>
+
+</body>
+</html>

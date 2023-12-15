@@ -2,179 +2,501 @@
 <html lang="en">
 
 <head>
-  <!-- Include the head section content if it's common across all pages -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Your Portfolio - Services</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <style>
-    /* Add your custom styles here */
-    html, body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal template</title>
 
-    body {
-      padding-top: 56px;
-      background-color: #f8f9fa; /* Set a background color for the body */
-      color: #495057; /* Set text color */
-    }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  integrity="sha384-wvfXpqpZZVQlNYKtvYFveUxzLy2mwonbKaB8Cq5WOg8gFW5ujMAWdA06b1/2PnpT"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+  <link rel="stylesheet" href="stilius.css">
+  <link rel="stylesheet" href="print.css" media="print">
 
-    .section {
-      padding: 50px 0; /* Add padding to top and bottom of each section */
-    }
-
-    .service-item {
-      margin-bottom: 30px;
-    }
-
-    /* Style for the jumbotron */
-    .jumbotron {
-      background-image: url('debeselys.png'); /* Set a background image for the jumbotron */
-      background-size: 100% 100%;
-      background-size: cover;
-      color: #ffffff; /* Set text color in the jumbotron */
-      text-align: center;
-      padding: 260px 0; /* Adjust padding as needed */
-      width: 100%;
-    }
-
-    /* Style for the service items */
-    .service-item .card {
-      height: 400px; /* Set a fixed height for each card */
-    }
-
-    /* Style for the contact form section */
-    #contact {
-      background-color: #ffffff; /* Set background color for the contact section */
-    }
-
-    *, *:before, *:after {
-  box-sizing: border-box;
-}
-
-    /* Add more styles as needed */
-  </style>
 </head>
 
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#home">Tomas Sluckus</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-          
-        </ul>
+  <div id="header">
+    <h1 id="name">Tomas Sluckus</h1>
+    <div class="nav-container">
+      <a class="nav-link-other" onclick="showSection('home')">Home</a>
+      <a class="nav-link-other" onclick="showSection('about')">About</a>
+      <a class="nav-link-other" onclick="showSection('resume')">Resume</a>
+      <a class="nav-link-other" onclick="showSection('contact')">Contact</a>
+    </div>
+  </div>
+
+  <div id="home" class="section">
+    <h1 class="centered-text">Tomas Sluckus</h1>
+    <h2 class="centered-text">
+      I'm a passionate 
+      <span>AI systems student</span>
+      at Vilnius Tech University
+    </h2>
+
+    <div class="nav-container">
+      <a class="nav-link" onclick="showSection('home')">Home</a>
+      <a class="nav-link" onclick="showSection('about')">About</a>
+      <a class="nav-link" onclick="showSection('resume')">Resume</a>
+      <a class="nav-link" onclick="showSection('contact')">Contact</a>
+    </div>
+  </div>
+
+  <div id="about" class="section">
+    
+    <div class="content-container">
+
+      <h2> about </h2>
+      <br>
+      <p class="start-words">Learn more about me</p>
+      
+      <div class="flex-content">
+
+        <img src="C:\Users\sluck\Downloads\Skriptinis\Tomas.jpg" alt="Tomas">
+        
+        <div class="right-flex">
+          <h3> Engineer and Programmer, weaving logic into code for innovative solutions </h3>
+          <p id="quota"> Veni, Vidi, Vici </p>
+          <div class="list-first">
+            
+            <div class="left-content">
+                <ul>
+                <li>
+                  <strong> Birthday: </strong>
+                  3 July 2003
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <strong> Website:  </strong>
+                  www.Personal.com
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <strong> Phone: </strong>
+                  +469 283 7052
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <strong> City: </strong>
+                  Vilnius, Lietuva
+                </li>
+              </ul>
+            </div>
+            <div class="right-content">
+              <ul>
+                <li>
+                  <strong> Age: </strong>
+                  20
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <strong> Degree: </strong>
+                  Bachelor's
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <strong> Email: </strong>
+                  Tomas.personal@gmail.com
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <strong> Freelance: </strong>
+                  Available
+                </li>
+              </ul>
+            </div>
+          </div>
+            
+            <p id="quota_1"> 
+              Dedicated to my craft, I thrive on discipline and hard work. 
+              As an innovative and honest worker, I continually seek opportunities
+              to learn and grow, bringing passion and commitment to every project.
+            </p>
+          </div>
+      </div> 
+
+      <div class="box-container">
+        <div class="box">
+          <span id="box-number-1" class="box-number"></span>
+          <p class="box-text">People helped</p>
+        </div>
+        <div class="box">
+          <span id="box-number-2" class="box-number"></span>
+          <p class="box-text">Projects</p>
+        </div>
+        <div class="box">
+          <span id="box-number-3" class="box-number"></span>
+          <p class="box-text">Hours of studying</p>
+        </div>
+        <div class="box">
+          <span id="box-number-4" class="box-number"></span>
+          <p class="box-text">Awards</p>
+        </div>
+
       </div>
-    </div>
-  </nav>
 
-  <!-- Page Content -->
-  <div class="container">
+      <h2>skills</h2>
 
-    <!-- Home Section -->
-    <div id="home" class="section jumbotron">
-      <h1 class="display-4">Tomas Sluckus</h1>
-      <p class="lead">Artificial Inteligence</p>
-      <!-- Add more content as needed -->
-    </div>
+      <div class="bar-content">
+        <div class="left-bar">
+          <div class="progress">
+            <span class="skill">HTML
+            <i class="val">30%</i>
+            </span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" id="myProgressBar-1" style="width: 30%;"></div>
+            </div>
+          </div>
+         
+          <div class="progress">
+            <span class="skill">CSS
+            <i class="val">40%</i>
+            </span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" id="myProgressBar-2" style="width: 40%;"></div>
+            </div>
+          </div>
 
-    <!-- Portfolio Section -->
-    <div id="portfolio" class="section">
-      <h2>Portfolio</h2>
-      <div class="row">
-        <!-- Portfolio items go here -->
-      </div>
-    </div>
+          <div class="progress">
+            <span class="skill">JavaScript
+            <i class="val">50%</i>
+            </span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" id="myProgressBar-3" style="width: 50%;"></div>
+            </div>
+          </div>
 
-    <!-- Services Section -->
-    <div id="services" class="section">
-      <h2>Services</h2>
-      <div class="row">
-        <!-- Service Item 1 -->
-        <div class="col-md-4 service-item">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Service 1</h4>
-              <p class="card-text">Description of Service 1</p>
+        </div>
+        <div class="right-bar">
+          <div class="progress">
+            <span class="skill">C++
+            <i class="val">90%</i>
+            </span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" id="myProgressBar-4" style="width: 90%;"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Python
+            <i class="val">70%</i>
+            </span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" id="myProgressBar-5" style="width: 70%;"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">MatLab
+            <i class="val">60%</i>
+            </span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" id="myProgressBar-6" style="width: 60%;"></div>
             </div>
           </div>
         </div>
-        <!-- Service Item 2 -->
-        <div class="col-md-4 service-item">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Service 2</h4>
-              <p class="card-text">Description of Service 2</p>
-            </div>
-          </div>
-        </div>
-        <!-- Service Item 3 -->
-        <div class="col-md-4 service-item">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Service 3</h4>
-              <p class="card-text">Description of Service 3</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
+  </div>
 
-    <!-- Contact Section -->
-    <div id="contact" class="section">
-        <h2>Contact Me</h2>
-        <form>
-          <!-- Your contact form goes here -->
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name">
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter your email">
-          </div>
-          <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+  <div id="resume" class="section">
+    
+    <div class="content-container">
+      
+      <h2>resume</h2>
+      
+      <p class="start-words">Check my resume</p>
+
+      <div class="resume-container">
+       
+        <div class="resume-item-1">
+          <h3 class="resume-title">Sumary</h3>
+          <h4>Tomas Sluckus</h4>
+          <p>
+            <em>
+              Innovative and gifted engineer and programmer with lots of experience in diferent programming languages.
+              Well educated in physics and maths, I make your problems my solutions.
+            </em>
+            <div class="list-one">
+              <ul>
+                <li>Vilnius cd 26787, Lithuania</li>
+                <li>+469 283 7052</li>
+                <li>Tomas.personal@gmail.com</li>
+              </ul>
+            </div>
+            
+          </p>
+        </div>
+
+       
+        <div class="resume-item-2">
+          <h3 class="resume-title">Education</h3>
+          <h4>Increased difficulty High school</h4>
+          <h5>2017-2021</h5>
+          <p>
+            <em>
+              Klaipedos Azuolyno high school, Lithunia
+            </em>
+          </p>
+          <p>
+            Studied Higher physics, mathematics, programming with C++.
+            Finished top three in my class, graduated with highest exam scores.
+          </p>
+        
+        
+          <h4 class="lone">Bachelor of Artificial Intelligence systems</h4>
+          <h5>2021-2025</h5>
+          <p>
+            <em>
+              Vilnius Tech University, Lithuania
+            </em>
+          </p>
+          <p>
+            Acquired knowledge in higher mathematics and physics. Got familliar with a lot of diferent
+            programming languages. Finished with excelent exam scores while being in the top of my group.
+          </p>
+        </div>
       </div>
     </div>
-    <!-- /.container -->
+  </div>
+
+  <div id="contact" class="section">
+
+    <div class="content-container">
+
+        <h2>Contact</h2>
+
+        <p class="start-words">Contact me</p>
+
+        <div class="info-boxes">
+
+            <div class="info-box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>My address</h3>
+                <p class="box-words">P12 Vingio street, Vilnius</p>
+            </div>
+
+            <div class="info-box">
+                <i class="fas fa-share-alt"></i>
+                <h3>Social profiles</h3>
+                <div class="social-links">
+                    <a href="#" class="btn btn-primary">
+                        <i class="bi-twitter" style="font-size:40px; margin-left:20px;"></i>
+                    </a>
+                    <a href="#" class="btn btn-primary">
+                        <i class="bi-facebook" style="font-size:40px; margin-left:40px;" ></i>
+                    </a>
+                    <a href="#" class="btn btn-primary">
+                        <i class="bi-instagram" style="font-size:40px; margin-left:50px;"></i>
+                    </a>
+                    <a href="#" class="btn btn-primary">
+                        <i class="bi-google" style="font-size:40px; margin-left:60px;"></i>
+                    </a>
+                    <a href="#" class="btn btn-primary">
+                        <i class="bi-linkedin" style="font-size:40px; margin-left:65px;"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <i class="fas fa-envelope"></i>
+                <h3>Email me</h3>
+                <p class="box-words">Tomas.personal@gmail.com</p>
+            </div>
+
+            <div class="info-box">
+                <i class="fas fa-phone-alt"></i>
+                <h3>Call me</h3>
+                <p class="box-words">+469 283 7052</p>
+            </div>
+
+        </div>
+
+        <div class="form">
+          <form action="#" method="post">
+
+            <div class="row">
+              <div class="form-group">
+              
+                <input type="text" id="name-1" name="name" placeholder="Your name" required>
+              </div>
+        
+              <div class="form-group">
+                
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+              </div>
+
+            </div>
+            
+      
+            <div class="form-group">
+              
+              <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            </div>
+      
+            <div class="form-group">
+              
+              <textarea id="message" name="message" placeholder="message" rows="4" required></textarea>
+            </div>
+      
+            <button type="submit">Send Message</button>
+      
+          </form>
+        </div>
+    </div>
+</div>
+
+</body>
+
+  <script>
+    
+      // Function to animate progress bars
+  function animateProgress(elementId, targetPercentage) {
+      const progressBar = document.getElementById(elementId);
+      progressBar.style.width = '0';
+
+      const duration = 1700; 
+      const increment = (targetPercentage / 100) / (duration / 1000);
+
+      function updateWidth(timestamp) {
+          const currentWidth = parseFloat(progressBar.style.width);
+          const elapsedTime = timestamp - startTime;
+          const newWidth = Math.min(targetPercentage, (elapsedTime / 1000) * increment * 100);
+          progressBar.style.width = `${newWidth}%`;
+
+          if (elapsedTime < duration) {
+              requestAnimationFrame(updateWidth);
+          }
+      }
+
+      const startTime = performance.now();
+      requestAnimationFrame(updateWidth);
+  }
+
+  // Function to handle intersection for progress bars
+  function handleBarIntersection(entries, observer) {
+      entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+              
+              animateProgress('myProgressBar-1', 30);
+              animateProgress('myProgressBar-2', 40);
+              animateProgress('myProgressBar-3', 50);
+              animateProgress('myProgressBar-4', 90);
+              animateProgress('myProgressBar-5', 70);
+              animateProgress('myProgressBar-6', 60);
+
+              // Disconnect the observer once the animations have started
+              observer.disconnect();
+          }
+      });
+  }
+
+  // Function to animate number counting
+  function animateNumberCounting(elementId, finalNumber) {
+      const element = document.getElementById(elementId);
+      const duration = 8000; 
+      const interval = 20; 
+      const steps = duration / interval;
+      const increment = finalNumber / steps;
+
+      let currentNumber = 0;
+      let step = 0;
+
+      function updateNumber() {
+          currentNumber += increment;
+          element.textContent = Math.round(currentNumber);
+
+          step++;
+
+          if (step < steps) {
+              requestAnimationFrame(updateNumber);
+          } else {
+              
+              element.textContent = finalNumber;
+          }
+      }
+
+      
+      updateNumber();
+  }
+
+  // Function to handle intersection for numbers
+  function handleNumberIntersection(entries, observer) {
+      entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+              
+              animateNumberCounting('box-number-1', 134);
+              animateNumberCounting('box-number-2', 78);
+              animateNumberCounting('box-number-3', 1463);
+              animateNumberCounting('box-number-4', 21);
+
+              
+              observer.disconnect();
+          }
+      });
+  }
+
+  // Function to set up intersection observer
+  function setUpObserver(targetSelector, callback) {
+      const targetElement = document.querySelector(targetSelector);
+      const observer = new IntersectionObserver(callback, { threshold: 0.5 });
+      observer.observe(targetElement);
+  }
+
   
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"></script>
-  </body>
+  document.addEventListener('DOMContentLoaded', function () {
+      
+      setUpObserver('.bar-content', handleBarIntersection);
+      
+      setUpObserver('.box-container', handleNumberIntersection);
+  });
+
+  // Function to show the selected section and hide others
+  function showSection(sectionId) {
+     
+      var sections = document.querySelectorAll('.section');
+      sections.forEach(function (section) {
+          section.style.display = 'none';
+      });
+
+      
+      var header = document.getElementById('header');
+      if (sectionId === 'home') {
+          header.style.display = 'none';
+      } else {
+          header.style.display = 'flex';
+      }
+
+      var selectedSection = document.getElementById(sectionId);
+      if (selectedSection) {
+          selectedSection.style.display = 'flex';
+      }
+  }
+
+  // Show home section by default on page load
+  document.addEventListener('DOMContentLoaded', function () {
+      showSection('home');
+  });
+
+  </script>
   
-  </html>
-  
+</html>
